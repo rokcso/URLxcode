@@ -31,7 +31,7 @@ main p {
 main textarea {
     width: 100%;
     min-height: 100px;
-    height: 30vh;
+    height: 25vh;
     padding: 10px;
     border: 1px solid #ccc;
     margin-bottom: 20px;

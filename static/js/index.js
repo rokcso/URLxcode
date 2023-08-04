@@ -12,7 +12,7 @@ function decode() {
     clearError();
     
     if (!isValidDecodeInput(input)) {
-        showError("输入无法进行解码");
+        showError(decodeErrorMsg);
         return;
     }
 
@@ -26,7 +26,7 @@ function encode() {
     clearError();
 
     if (!isValidEncodeInput(input)) {
-        showError("输入无法进行编码");
+        showError(encodeErrorMsg);
         return;
     }
 
@@ -60,11 +60,11 @@ function copy() {
     const outputValue = outputBox.value;
 
     navigator.clipboard.writeText(outputValue);
-    copyBtn.textContent = "成功";
+    copyBtn.textContent = copyBtnTextAfter;
     copyBtn.style.background = "#40c060";
 
     setTimeout(() => {
-        copyBtn.textContent = "复制";
+        copyBtn.textContent = copyBtnTextBefore;
         copyBtn.style.background = "#4c9aff";
     }, 1000);
 }

@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- 百度搜索资源站点验证 -->
     <meta name="baidu-site-verification" content="codeva-yd4vTyGhor" />
-    <title>URL Encode and Decode</title>
+    <title>URL Encode and Decode - Online Tool - URLxcode.com</title>
+    <meta name="description" content="Encode URL to URL-encoded format or decode from it easily. Our site is an online tool to convert your data.">
     <link rel="shortcut icon" href="../img/icon/icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="canonical" href="https://www.urlxcode.com/">
     <!-- 私有化部署的 umami 统计分析 -->
     <script async defer data-website-id="1e1604b8-2b44-4b5f-87f8-f65c78879ff4" src="https://umami.waringhu.com/umami.js"></script>
     <!-- 百度统计分析 -->
@@ -39,15 +41,16 @@
     </header>
 
     <main class="container">
-        <textarea id="input-text"></textarea>
-        <p>以下是 URL 编码或解码后的结果：</p>
-        <textarea id="output-text" readonly></textarea>
+      <h1>Encode to URL-encoded format or decode form it</h1>
+        <textarea id="input-text" placeholder="Please enter the text to be encoded/decoded."></textarea>
+        <p>The following is the result of URL encoding or decoding:</p>
+        <textarea id="output-text" placeholder="Encode/Decode result." readonly></textarea>
         <div class="buttons">
-            <button id="btn-decode">解码</button>
-            <button id="btn-encode">编码</button>
-            <button id="btn-clear">清空</button>
-            <button id="btn-swap">交换</button>
-            <button id="btn-copy">复制</button>
+            <button id="btn-decode">Decode</button>
+            <button id="btn-encode">Encode</button>
+            <button id="btn-clear">Clear</button>
+            <button id="btn-swap">Swap</button>
+            <button id="btn-copy">Copy</button>
         </div>
     </main>
 
@@ -57,6 +60,12 @@
         </div>
     </footer>
 
+    <script>
+      let decodeErrorMsg = "Input cannot be decoded.";
+      let encodeErrorMsg = "Input cannot be encoded.";
+      let copyBtnTextBefore = "Copy";
+      let copyBtnTextAfter = "Copied";
+    </script>
     <script src="../static/js/index.js"></script>
   </body>
 </html>

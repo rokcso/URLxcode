@@ -1,0 +1,84 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    height: 50px;
+}
+
+header nav {
+    float: right;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+main {
+    padding: 40px 0;
+}
+
+main p {
+    margin: 20px 0;
+}
+
+main textarea {
+    width: 100%;
+    min-height: 100px;
+    height: 30vh;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    text-align: left;
+    word-wrap: break-word;
+    resize: none;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    background: #4c9aff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.buttons button:hover {
+    background: #3c8aff;
+}
+
+#btn-clear {
+    background: #db4c4c;
+}
+#btn-clear:hover {
+    background: #d40000;
+}
+
+footer {
+    background: #eee;
+    text-align: center;
+    padding: 20px;
+    height: 50px;
+}
+
+@media (max-width: 600px) {
+    header {
+        text-align: center;
+    }
+    header nav {
+        float: none;
+    }
+    .buttons {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .buttons button {
+        flex: 1 1 50%;
+    }
+}

@@ -7,8 +7,8 @@
     <meta name="baidu-site-verification" content="codeva-yd4vTyGhor" />
     <title>URL 解码 编码 - 在线工具 - URLxcode.com</title>
     <meta name="description" content="便捷地将 URL 进行 URL 解码、编码。一款在线转换数据的工具。">
-    <link rel="shortcut icon" href="../img/icon/icon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="shortcut icon" href="../../img/icon/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../static/css/index.css">
     <link rel="canonical" href="https://www.urlxcode.com/">
     <!-- 私有化部署的 umami 统计分析 -->
     <script async defer data-website-id="1e1604b8-2b44-4b5f-87f8-f65c78879ff4" src="https://umami.waringhu.com/umami.js"></script>
@@ -27,33 +27,18 @@
     <header>
       <div class="container">
         <div class="logo">
-          <a href="/zh" id="site-title" title="URL Encode and Decode - Online Tool">
+          <a href="/" id="site-title" title="URL Encode and Decode - Online Tool">
             <span style="font-weight: bolder; font-size: larger;">URL xcode</span>
             <br>
             <span style="font-weight: bold; font-size: smaller;">x = En & De</span>
           </a>
-          <nav>
-            <a href="/">English</a>
-            <a href="/zh">简体中文</a>
-          </nav>
         </div>
       </div>
     </header>
 
     <main class="container">
-      <h1>URL 解码或编码</h1>
-        <textarea id="input-text" placeholder="请输入内容以进行 URL 编码或解码。"></textarea>
-        <p>以下是进行 URL 解码或编码后的结果：</p>
-        <textarea id="output-text" placeholder="URL 编码或解码后的结果。" readonly></textarea>
-        <div class="buttons">
-            <button id="btn-decode">解码</button>
-            <button id="btn-encode">编码</button>
-            <button id="btn-clear">清空</button>
-            <button id="btn-swap">交换</button>
-            <button id="btn-copy">复制</button>
-        </div>
         <div class="post">
-          <h2><a href="./post/About-URL-encoded.html">什么是 URL 编码格式？</a></h2>
+          <h1>什么是 URL 编码格式？</h1>
           <p>URL 编码，也称为百分比编码，是一种在某些情况下对统一资源标识符（URI）中的信息进行编码的机制。</p>
           <p>表示数据，尤其是 URI 中不允许的字符，方法是将它们替换为一个或多个字符三元组，该三元组由百分比字符「%」后跟两个十六进制数字组成。</p>
           <p>关于 URL 编码的几个要点：</p>
@@ -72,6 +57,7 @@
             <li>小于符号编码为：%3C</li>
           </ul>
           <p>因此字符串“my file.txt”将编码为“My%20file.txt”。</p>
+          <h2><a href="/zh">如何轻松地将字符串编码为 URL 编码？</a></h2>
         </div>
     </main>
 
@@ -80,13 +66,5 @@
             <p>Copyright &copy; 2023 <a href="/">URL xcode</a>.</p>
         </div>
     </footer>
-
-    <script>
-      let decodeErrorMsg = "输入的内容不支持 URL 解码。";
-      let encodeErrorMsg = "输入的内容不支持 URL 编码。";
-      let copyBtnTextBefore = "复制";
-      let copyBtnTextAfter = "成功";
-    </script>
-    <script src="../static/js/index.js"></script>
   </body>
 </html>

@@ -66,7 +66,7 @@ function copy() {
     setTimeout(() => {
         copyBtn.textContent = copyBtnTextBefore;
         copyBtn.style.background = "#4c9aff";
-    }, 1000);
+    }, 250);
 }
 
 function isValidDecodeInput(input) {

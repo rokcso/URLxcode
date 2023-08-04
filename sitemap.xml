@@ -1,15 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?> 
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset>
 <url>
-  <loc>http://www.urlxcode.com/</loc>
-  <priority>1.0</priority>
-  <changefreq>monthly</changefreq>
-  <lastmod>2023-08-04</lastmod>
+  <loc>https://www.urlxcode.com/</loc>
+  <lastmod>2023-08-04T09:48:44+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://www.urlxcode.com/zh</loc>
-  <priority>1.0</priority>
-  <changefreq>monthly</changefreq>
-  <lastmod>2023-08-04</lastmod>
+  <loc>https://www.urlxcode.com/zh</loc>
+  <lastmod>2023-08-04T09:48:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.urlxcode.com/About-URL-encoded.html</loc>
+  <lastmod>2023-08-04T09:48:44+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 </urlset>

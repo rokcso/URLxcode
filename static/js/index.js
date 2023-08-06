@@ -1,7 +1,10 @@
+"use strict";
+
 document.getElementById("btn-decode").addEventListener("click", decode);
 document.getElementById("btn-encode").addEventListener("click", encode);
 document.getElementById("btn-clear").addEventListener("click", clear);
 document.getElementById("btn-swap").addEventListener("click", swap);
+document.getElementById("btn-parse").addEventListener("click", parseAllURL);
 document.getElementById("btn-copy").addEventListener("click", copy);
 document.getElementById("input-text").addEventListener("input", clearError)
 let errorMsgDiv;
@@ -52,6 +55,48 @@ function swap() {
     const inputValue = inputBox.value;
     inputBox.value = outputBox.value;
     outputBox.value = inputValue;
+}
+
+function parseAllURL() {
+    const inputBox = document.getElementById('input-text');
+    const outputBox = document.getElementById('output-text');
+    let inputURL = inputBox.value;
+    let outputURL = outputBox.value;
+    let inputParse = parse(inputURL);
+    let ouputParse = parse(outputURL);
+
+    if (inputParse !== 0) {
+        inputBox.value = inputParse;
+    }
+    if (ouputParse !== 0) {
+        outputBox.value = ouputParse;
+    }
+}
+
+function parse(url) {
+    if (!url) {
+        console.log("Parse Error: No input.");
+        return 0;
+    }
+    let urlTrim = url.trim();
+    if (urlTrim.includes("\n")) {
+        console.log("Parse Error: Has been parsed.");
+        return 0;
+    }
+    const urlPattern = /^(\w+):\/\//;
+    if (!urlPattern.test(url)) {
+        console.log("Parse Error: Not in URL format.");
+        return 0;
+    }
+    const protocol = /^(\w+):\/\//.exec(url)[1];
+    const hostname = /^(\w+):\/\/([^/]+)/.exec(url)[2];
+    const pathname = /^(\w+):\/\/[^/]+(\/*[^?]*)/.exec(url)[2];
+    const params = /[?](.*)$/.exec(url)[1];
+    let result = `${protocol}://${hostname}${pathname}\n`;
+    params.split('&').forEach(param => {
+        result += `${param}\n`;
+      });
+    return result;
 }
 
 function copy() {

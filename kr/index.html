@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- 百度搜索资源站点验证 -->
+  <meta name="baidu-site-verification" content="codeva-yd4vTyGhor" />
+  <!-- Google 搜索资源站点验证 -->
+  <meta name="google-site-verification" content="h9_G-edVa7uTlUrYdzBl-7zMXQbInCXjG70uZ__CVmk" />
+  <title>URL 디코드 인코딩 - 온라인 도구 - URLxcode.com</title>
+  <meta name="description" content="URL을 쉽게 디코딩하고 인코딩합니다. 데이터를 온라인으로 변환하는 도구입니다.">
+  <link rel="shortcut icon" href="img/icon/icon16x16.png" type="image/png" sizes="16x16">
+  <link rel="shortcut icon" href="img/icon/icon32x32.png" type="image/png" sizes="32x32">
+  <link rel="shortcut icon" href="img/icon/icon48x48.png" type="image/png" sizes="48x48">
+  <link rel="shortcut icon" href="img/icon/icon64x64.png" type="image/png" sizes="64x64">
+  <link rel="shortcut icon" href="img/icon/icon128x128.png" type="image/png" sizes="128x128">
+  <link rel="stylesheet" href="/static/css/index.css">
+  <!-- 私有化部署的 umami 统计分析 -->
+  <script async defer data-website-id="1e1604b8-2b44-4b5f-87f8-f65c78879ff4"
+    src="https://umami.waringhu.com/umami.js"></script>
+  <!-- 百度统计分析 -->
+  <script>
+    var _hmt = _hmt || [];
+    (function () {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?54ef289bd991df8f8430238e83790b15";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+  <!-- Google 统计分析 -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B1CEHJ1G63"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-B1CEHJ1G63');
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="/kr" id="site-title" title="URL Encode and Decode - Online Tool">
+          <span style="font-weight: bolder; font-size: larger;">URL xcode</span>
+          <br>
+          <span style="font-weight: bold; font-size: smaller;">x = En/De</span>
+        </a>
+        <nav>
+          <a href="/">English</a>
+          <a href="/zh">简体中文</a>
+          <a href="/kr">한국인</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>URL 디코딩 또는 인코딩</h1>
+    <div class="text-box"></div>
+    <textarea id="input-text" placeholder="URL 인코딩 또는 디코딩할 항목을 입력하세요."></textarea>
+    <p>다음은 URL 디코딩 또는 인코딩 후의 결과입니다:</p>
+    <textarea id="output-text" placeholder="URL 인코딩 또는 디코딩 결과." readonly></textarea>
+    </div>
+    <div class="btn-func">
+      <button id="btn-copy">복사</button>
+      <div class="buttons">
+        <button id="btn-decode">디코딩</button>
+        <div class="encode-func">
+          <button id="btn-encode">코딩</button>
+          <div class="encode-mode">
+            <div class="radio-group">
+              <input type="radio" name="encode-mode" id="encode-uri" checked />
+              <label for="encode-uri" data-tooltip="JavaScript의 encodeURI() 메서드를 사용하여 구현">특수 문자를 인코딩하지 마십시오</label>
+            </div>
+            <div class="radio-group">
+              <input type="radio" name="encode-mode" id="encode-uri-component" />
+              <label for="encode-uri-component" data-tooltip="JavaScript의 encodeURIComponent() 메서드를 사용하여 구현됨">특수 문자 인코딩</label>
+            </div>
+          </div>
+        </div>
+        <button id="btn-clear">비어 있는</button>
+        <button id="btn-swap">교환</button>
+        <button id="btn-parse">분석하다</button>
+      </div>
+    </div>
+    <div class="post">
+      <h2><a href="/kr/post/About-URL-encoded.html">URL 인코딩 형식은 무엇입니까?</a></h2>
+      <p>백분율 인코딩이라고도 하는 URL 인코딩은 특정 상황에서 URI(Uniform Resource Identifier)의 정보를 인코딩하는 메커니즘입니다.</p>
+      <p>데이터, 특히 URI에서 허용되지 않는 문자를 퍼센트 문자 "%"와 두 개의 16진수 숫자로 구성된 하나 이상의 3중 문자로 대체하여 나타냅니다.</p>
+      <p>URL 인코딩에 대한 몇 가지 핵심 사항:</p>
+      <ul>
+        <li>URI에서 허용되지 않거나 공백, ASCII가 아닌 문자 및 "?" 및 "/"와 같은 특정 예약 문자와 같이 특별한 의미가 있는 문자를 인코딩하는 데 사용됩니다. 이를 통해 이러한 문자를 URI에 포함할 수 있습니다.</li>
+        <li>16진수 0-9 및 A-F는 코드화된 값을 나타내는 데 사용됩니다.</li>
+        <li>문자, 숫자, "-", ".", "_" 및 "~"와 같은 문자는 인코딩할 필요가 없습니다.</li>
+        <li>URL은 ASCII 문자 집합을 사용하여 인터넷을 통해서만 보낼 수 있습니다. URL에는 종종 ASCII 집합 외부의 문자가 포함되므로 URL을 유효한 ASCII 형식으로 변환해야 합니다. URL 인코딩은 이 변환을 제공합니다.</li>
+        <li>인코딩 형식은 퍼센트 "%" 문자를 사용하여 인코딩된 문자를 나타내기 때문에 퍼센트 인코딩이라고도 합니다.</li>
+        <li>URL 인코딩은 HTML 엔터티와 같은 HTML 문자 인코딩과 다릅니다.</li>
+      </ul>
+      <p>URL 인코딩의 몇 가지 예:</p>
+      <ul>
+        <li>공백 문자는 다음과 같이 인코딩됩니다: %20</li>
+        <li>느낌표는 %21로 인코딩됩니다.</li>
+        <li>보다 작음 기호는 %3C로 코딩됩니다.</li>
+      </ul>
+      <p>따라서 문자열 "my file.txt"는 "My%20file.txt"로 인코딩됩니다.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Copyright &copy; 2023 <a href="/">URL xcode</a>.</p>
+    </div>
+  </footer>
+
+  <script>
+    let decodeErrorMsg = "입력이 URL 디코딩을 지원하지 않습니다.";
+    let encodeErrorMsg = "입력이 URL 인코딩을 지원하지 않습니다.";
+    let copyBtnTextBefore = "복사";
+    let copyBtnTextAfter = "성공";
+  </script>
+  <script src="/static/js/index.js"></script>
+</body>
+
+</html>

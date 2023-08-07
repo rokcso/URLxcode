@@ -150,7 +150,7 @@ function isValidEncodeInput(input) {
 
 function showError(msg) {
   const input = document.getElementById("input-text");
-  input.style.border = "1px solid red";
+  input.style.border = "2px solid red";
 
   errorMsgDiv = document.createElement("div");
   errorMsgDiv.textContent = msg;

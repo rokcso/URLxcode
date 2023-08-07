@@ -35,7 +35,7 @@
         <a href="/" id="site-title" title="URL Encode and Decode - Online Tool">
           <span style="font-weight: bolder; font-size: larger">URL xcode</span>
           <br />
-          <span style="font-weight: bold; font-size: smaller">x = En & De</span>
+          <span style="font-weight: bold; font-size: smaller">x = En/De</span>
         </a>
         <nav>
           <a href="/">English</a>
@@ -60,16 +60,14 @@
           <button id="btn-encode">Encode</button>
           <div class="encode-mode">
             <div class="radio-group">
-              <input type="radio" name="encode-mode" id="encode-special" checked />
-              <label for="encode-special"
-                data-tooltip="Using the encodeURI () method of JavaScript to implement.">Encode only special
-                characters</label>
+              <input type="radio" name="encode-mode" id="encode-uri" checked />
+              <label for="encode-uri"
+                data-tooltip="Using the encodeURI() method of JavaScript to implement.">Do not encode special symbols</label>
             </div>
             <div class="radio-group">
-              <input type="radio" name="encode-mode" id="encode-all" />
-              <label for="encode-all"
-                data-tooltip="Using the encodeURIComponent () method of JavaScript to implement.">Encode all
-                characters</label>
+              <input type="radio" name="encode-mode" id="encode-uri-component" />
+              <label for="encode-uri-component"
+                data-tooltip="Using the encodeURIComponent() method of JavaScript to implement.">Encode special symbols</label>
             </div>
           </div>
         </div>

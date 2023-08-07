@@ -25,8 +25,8 @@ function decode() {
 }
 
 function encode() {
-  const special = document.getElementById("encode-special");
-  const all = document.getElementById("encode-all");
+  const encodeURIMode = document.getElementById("encode-uri");
+  const encodeURIComponentMode = document.getElementById("encode-uri-component");
 
   let input = document.getElementById("input-text").value;
   clearError();
@@ -37,9 +37,9 @@ function encode() {
   }
 
   let output;
-  if (special.checked) {
+  if (encodeURIMode.checked) {
     output = encodeURI(input);
-  } else if (all.checked) {
+  } else if (encodeURIComponentMode.checked) {
     output = encodeURIComponent(input);
   }
 

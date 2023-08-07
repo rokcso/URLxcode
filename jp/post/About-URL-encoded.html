@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- 百度搜索资源站点验证 -->
+  <meta name="baidu-site-verification" content="codeva-yd4vTyGhor" />
+  <!-- Google 搜索资源站点验证 -->
+  <meta name="google-site-verification" content="h9_G-edVa7uTlUrYdzBl-7zMXQbInCXjG70uZ__CVmk" />
+  <title>URLエンコード形式とは何ですか? - URLxcode.com</title>
+  <meta name="description" content="URL エンコード形式について簡単に説明します。">
+  <link rel="shortcut icon" href="img/icon/icon16x16.png" type="image/png" sizes="16x16">
+  <link rel="shortcut icon" href="img/icon/icon32x32.png" type="image/png" sizes="32x32">
+  <link rel="shortcut icon" href="img/icon/icon48x48.png" type="image/png" sizes="48x48">
+  <link rel="shortcut icon" href="img/icon/icon64x64.png" type="image/png" sizes="64x64">
+  <link rel="shortcut icon" href="img/icon/icon128x128.png" type="image/png" sizes="128x128">
+  <link rel="stylesheet" href="/static/css/index.css">
+  <!-- 私有化部署的 umami 统计分析 -->
+  <script async defer data-website-id="1e1604b8-2b44-4b5f-87f8-f65c78879ff4"
+    src="https://umami.waringhu.com/umami.js"></script>
+  <!-- 百度统计分析 -->
+  <script>
+    var _hmt = _hmt || [];
+    (function () {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?54ef289bd991df8f8430238e83790b15";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+  <!-- Google 统计分析 -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B1CEHJ1G63"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-B1CEHJ1G63');
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="/jp" id="site-title" title="URL エンコードとデコード - オンライン ツール">
+          <span style="font-weight: bolder; font-size: larger;">URL xcode</span>
+          <br>
+          <span style="font-weight: bold; font-size: smaller;">x = En/De</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="post">
+      <h1>URLエンコード形式とは何ですか?</h1>
+      <p>
+        URL エンコーディング (パーセント エンコーディングとも呼ばれる) は、特定の状況下で、Uniform Resource Identifier (URI) 内の情報をエンコードするメカニズムです。
+      </p>
+      <p>
+        データ、特に URI で許可されていない文字を、パーセント文字「%」の後に 2 つの 16 進数が続く 1 つ以上の文字の 3 つ組に置き換えることによって表します。
+      </p>
+      <p>URL エンコーディングに関するいくつかの重要なポイント:</p>
+      <ul>
+        <li>
+            これは、スペース、非 ASCII 文字、「?」などの特定の予約文字など、URI で許可されない文字や特別な意味を持つ文字をエンコードするために使用されます。 と "/"。 これにより、そのような文字を URI に含めることができます。
+        </li>
+        <li>
+            エンコードされた値を表すには、16 進数の 0 ～ 9 および A ～ F が使用されます。
+        </li>
+        <li>
+            アルファベット、数字、「-」、「.」、「_」、「~」などの一部の文字はエンコードする必要がありません。
+        </li>
+        <li>
+            URL は、ASCII 文字セットを使用してインターネット経由でのみ送信できます。 URL には ASCII セット以外の文字が含まれることが多いため、URL を有効な ASCII 形式に変換する必要があります。 URL エンコーディングはこの変換を提供します。
+        </li>
+        <li>
+            エンコードされた形式は、エンコードされた文字を示すためにパーセント「%」文字を使用するため、パーセント エンコーディングとも呼ばれます。
+        </li>
+        <li>
+            URL エンコーディングは、HTML エンティティのような HTML 文字エンコーディングとは異なります。
+        </li>
+      </ul>
+      <p>URL エンコーディングの例をいくつか示します:</p>
+      <ul>
+        <li>スペース文字は %20 にエンコードされます。</li>
+        <li>感嘆符は次のようにエンコードされます: %21</li>
+        <li>小なり記号は %3C にエンコードされます</li>
+      </ul>
+      <p>したがって、文字列「My file.txt」は「My%20file.txt」にエンコードされます。</p>
+      <h2><a href="/jp">文字列を簡単にURLエンコードするにはどうすればよいですか?</a></h2>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Copyright &copy; 2023 <a href="/">URL xcode</a>.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

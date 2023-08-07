@@ -44,16 +44,45 @@
 
     <main class="container">
       <h1>URL 解码或编码</h1>
+      <div class="text-box"></div>
         <textarea id="input-text" placeholder="请输入内容以进行 URL 编码或解码。"></textarea>
         <p>以下是进行 URL 解码或编码后的结果：</p>
         <textarea id="output-text" placeholder="URL 编码或解码后的结果。" readonly></textarea>
-        <div class="buttons">
+      </div>
+        <div class="btn-func">
+          <button id="btn-copy">复制</button>
+          <div class="buttons">
             <button id="btn-decode">解码</button>
-            <button id="btn-encode">编码</button>
+            <div class="encode-func">
+              <button id="btn-encode">编码</button>
+              <div class="encode-mode">
+                <div class="radio-group">
+                  <input
+                    type="radio"
+                    name="encode-mode"
+                    id="encode-special"
+                    checked
+                  />
+                  <label
+                    for="encode-special"
+                    data-tooltip="使用 JavaScript 的 encodeURI() 方法实现"
+                    >仅编码特殊字符</label
+                  >
+                </div>
+                <div class="radio-group">
+                  <input type="radio" name="encode-mode" id="encode-all" />
+                  <label
+                    for="encode-all"
+                    data-tooltip="使用 JavaScript 的 encodeURIComponent() 方法实现"
+                    >编码所有字符</label
+                  >
+                </div>
+              </div>
+            </div>
             <button id="btn-clear">清空</button>
             <button id="btn-swap">交换</button>
             <button id="btn-parse">解析</button>
-            <button id="btn-copy">复制</button>
+          </div>
         </div>
         <div class="post">
           <h2><a href="/zh/post/About-URL-encoded.html">什么是 URL 编码格式？</a></h2>

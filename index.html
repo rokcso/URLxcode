@@ -6,33 +6,53 @@
     <!-- 百度搜索资源站点验证 -->
     <meta name="baidu-site-verification" content="codeva-yd4vTyGhor" />
     <!-- Google 搜索资源站点验证 -->
-    <meta name="google-site-verification" content="h9_G-edVa7uTlUrYdzBl-7zMXQbInCXjG70uZ__CVmk" />
+    <meta
+      name="google-site-verification"
+      content="h9_G-edVa7uTlUrYdzBl-7zMXQbInCXjG70uZ__CVmk"
+    />
     <title>URL Encode and Decode - Online Tool - URLxcode.com</title>
-    <meta name="description" content="Encode URL to URL-encoded format or decode from it easily. Our site is an online tool to convert your data.">
-    <link rel="shortcut icon" href="/img/icon/icon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/static/css/index.css">
-    <link rel="canonical" href="https://www.urlxcode.com/">
+    <meta
+      name="description"
+      content="Encode URL to URL-encoded format or decode from it easily. Our site is an online tool to convert your data."
+    />
+    <link rel="shortcut icon" href="/img/icon/icon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/static/css/index.css" />
+    <link rel="canonical" href="https://www.urlxcode.com/" />
     <!-- 私有化部署的 umami 统计分析 -->
-    <script async defer data-website-id="1e1604b8-2b44-4b5f-87f8-f65c78879ff4" src="https://umami.waringhu.com/umami.js"></script>
+    <script
+      async
+      defer
+      data-website-id="1e1604b8-2b44-4b5f-87f8-f65c78879ff4"
+      src="https://umami.waringhu.com/umami.js"
+    ></script>
     <!-- 百度统计分析 -->
     <script>
       var _hmt = _hmt || [];
-      (function() {
+      (function () {
         var hm = document.createElement("script");
         hm.src = "https://hm.baidu.com/hm.js?54ef289bd991df8f8430238e83790b15";
-        var s = document.getElementsByTagName("script")[0]; 
+        var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
       })();
-      </script>
+    </script>
   </head>
+
   <body>
     <header>
       <div class="container">
         <div class="logo">
-          <a href="/" id="site-title" title="URL Encode and Decode - Online Tool">
-            <span style="font-weight: bolder; font-size: larger;">URL xcode</span>
-            <br>
-            <span style="font-weight: bold; font-size: smaller;">x = En & De</span>
+          <a
+            href="/"
+            id="site-title"
+            title="URL Encode and Decode - Online Tool"
+          >
+            <span style="font-weight: bolder; font-size: larger"
+              >URL xcode</span
+            >
+            <br />
+            <span style="font-weight: bold; font-size: smaller"
+              >x = En & De</span
+            >
           </a>
           <nav>
             <a href="/">English</a>
@@ -44,44 +64,112 @@
 
     <main class="container">
       <h1>Encode to URL-encoded format or decode from it</h1>
-        <textarea id="input-text" placeholder="Please enter the text to encod/decod."></textarea>
+      <div class="text-box">
+        <textarea
+          id="input-text"
+          placeholder="Please enter the text to encod/decod."
+        ></textarea>
         <p>The following is the result of URL encoding or decoding:</p>
-        <textarea id="output-text" placeholder="URL encoded/decoded result." readonly></textarea>
+        <textarea
+          id="output-text"
+          placeholder="URL encoded/decoded result."
+          readonly
+        ></textarea>
+      </div>
+      <div class="btn-func">
+        <button id="btn-copy">Copy</button>
         <div class="buttons">
-            <button id="btn-decode">Decode</button>
+          <button id="btn-decode">Decode</button>
+          <div class="encode-func">
             <button id="btn-encode">Encode</button>
-            <button id="btn-clear">Clear</button>
-            <button id="btn-swap">Swap</button>
-            <button id="btn-parse">Parse</button>
-            <button id="btn-copy">Copy</button>
+            <div class="encode-mode">
+              <div class="radio-group">
+                <input
+                  type="radio"
+                  name="encode-mode"
+                  id="encode-special"
+                  checked
+                />
+                <label
+                  for="encode-special"
+                  data-tooltip="Using the encodeURI () method of JavaScript to implement."
+                  >Encode only special characters</label
+                >
+              </div>
+              <div class="radio-group">
+                <input type="radio" name="encode-mode" id="encode-all" />
+                <label
+                  for="encode-all"
+                  data-tooltip="Using the encodeURIComponent () method of JavaScript to implement."
+                  >Encode all characters</label
+                >
+              </div>
+            </div>
+          </div>
+          <button id="btn-clear">Clear</button>
+          <button id="btn-swap">Swap</button>
+          <button id="btn-parse">Parse</button>
         </div>
-        <div class="post">
-          <h2><a href="/post/About-URL-encoded.html">What is URL-encoded format?</a></h2>
-          <p>URL-encoding, also known as percent-encoding, is a mechanism for encoding information in a Uniform Resource Identifier (URI) under certain circumstances.</p>
-          <p>represents data, especially characters that are not permitted in a URI, by replacing them with one or more character triplets consisting of the percent character "%" followed by two hexadecimal digits.</p>
-          <p>Some key points about URL-encoding:</p>
-          <ul>
-            <li>It is used to encode characters that are not allowed or have special meaning in a URI, such as spaces, non-ASCII characters, and certain reserved characters like "?" and "/". This allows including such characters in a URI.</li>
-            <li>The hexadecimal digits 0-9 and A-F are used to represent the encoded value.</li>
-            <li>Some characters like alphabets, numbers, "-", ".", "_", and "~" don't need to be encoded.</li>
-            <li>URLs can only be sent over the Internet using the ASCII character-set. Since URLs often contain characters outside the ASCII set, the URL has to be converted into a valid ASCII format. URL-encoding provides this conversion.</li>
-            <li>The encoded format is also known as percent-encoding because it uses the percent "%" character to denote encoded characters.</li>
-            <li>URL-encoding is different from HTML character encoding like HTML entities.</li>
-          </ul>
-          <p>Some examples of URL-encoding:</p>
-          <ul>
-            <li>Space character encodes to: %20</li>
-            <li>Exclamation mark encodes to: %21</li>
-            <li>Less than sign encodes to: %3C</li>
-          </ul>
-          <p>So the string "My file.txt" would encode to "My%20file.txt"</p>
-        </div>
+      </div>
+      <div class="post">
+        <h2>
+          <a href="/post/About-URL-encoded.html">What is URL-encoded format?</a>
+        </h2>
+        <p>
+          URL-encoding, also known as percent-encoding, is a mechanism for
+          encoding information in a Uniform Resource Identifier (URI) under
+          certain circumstances.
+        </p>
+        <p>
+          represents data, especially characters that are not permitted in a
+          URI, by replacing them with one or more character triplets consisting
+          of the percent character "%" followed by two hexadecimal digits.
+        </p>
+        <p>Some key points about URL-encoding:</p>
+        <ul>
+          <li>
+            It is used to encode characters that are not allowed or have special
+            meaning in a URI, such as spaces, non-ASCII characters, and certain
+            reserved characters like "?" and "/". This allows including such
+            characters in a URI.
+          </li>
+          <li>
+            The hexadecimal digits 0-9 and A-F are used to represent the encoded
+            value.
+          </li>
+          <li>
+            Some characters like alphabets, numbers, "-", ".", "_", and "~"
+            don't need to be encoded.
+          </li>
+          <li>
+            URLs can only be sent over the Internet using the ASCII
+            character-set. Since URLs often contain characters outside the ASCII
+            set, the URL has to be converted into a valid ASCII format.
+            URL-encoding provides this conversion.
+          </li>
+          <li>
+            The encoded format is also known as percent-encoding because it uses
+            the percent "%" character to denote encoded characters.
+          </li>
+          <li>
+            URL-encoding is different from HTML character encoding like HTML
+            entities.
+          </li>
+        </ul>
+        <p>Some examples of URL-encoding:</p>
+        <ul>
+          <li>Space character encodes to: %20</li>
+          <li>Exclamation mark encodes to: %21</li>
+          <li>Less than sign encodes to: %3C</li>
+        </ul>
+        <p>So the string "My file.txt" would encode to "My%20file.txt"</p>
+      </div>
     </main>
 
     <footer>
-        <div class="container">
-            <p>Copyright &copy; 2023 <a href="/">URL xcode</a>.</p>
-        </div>
+      <div class="container">
+        <p>Copyright &copy; 2023 <a href="/">URL xcode</a>.</p>
+      </div>
     </footer>
 
     <script>

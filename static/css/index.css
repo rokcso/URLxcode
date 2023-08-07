@@ -1,91 +1,138 @@
 .container {
-    max-width: 800px;
-    margin: 0 auto;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 20px;
-    height: 50px;
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  height: 50px;
 }
 
 header nav {
-    float: right;
+  float: right;
 }
 
 header a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 main {
-    padding: 40px 0;
+  padding: 40px 0;
 }
 
 main p {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 main textarea {
-    width: 100%;
-    min-height: 100px;
-    height: 25vh;
-    padding: 10px;
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
-    text-align: left;
-    word-wrap: break-word;
-    resize: none;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100px;
+  height: 25vh;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  text-align: left;
+  word-wrap: break-word;
+  resize: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80px;
+}
+
+.encode-func {
+  display: flex;
+  align-items: center;
+}
+
+.encode-mode {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  padding: 1px;
+}
+
+.radio-group label:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  background: #333;
+  color: #fff;
+  opacity: 0.85;
+  padding: 4px 8px;
+  border-radius: 4px;
 }
 
 .buttons button {
-    padding: 10px 20px;
-    margin-right: 10px;
-    border: none;
-    background: #4c9aff;
-    color: #fff;
-    border-radius: 4px;
-    cursor: pointer;
+  padding: 10px;
+  min-width: 80px;
+  border: none;
+  background: #4c9aff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
 }
 .buttons button:hover {
-    background: #3c8aff;
+  background: #3c8aff;
 }
 
 #btn-clear {
-    background: #db4c4c;
+  background: #db4c4c;
 }
 #btn-clear:hover {
-    background: #d40000;
+  background: #d40000;
+}
+
+#btn-copy {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #4c9aff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#btn-copy:hover {
+  background: #3c8aff;
 }
 
 footer {
-    background: #eee;
-    text-align: center;
-    padding: 20px;
-    height: 30px;
+  background: #eee;
+  text-align: center;
+  padding: 20px;
+  height: 30px;
 }
 
 footer a {
-    color: #A5A5A5;
-    text-decoration: none;
+  color: #a5a5a5;
+  text-decoration: none;
 }
 footer a:hover {
-    color: #333;
+  color: #333;
 }
 
 @media (max-width: 600px) {
-    header {
-        text-align: center;
-    }
-    header nav {
-        float: none;
-    }
-    .buttons {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .buttons button {
-        flex: 1 1 50%;
-    }
+  header {
+    text-align: center;
+  }
+  header nav {
+    float: none;
+  }
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .buttons button {
+    flex: 1 1 50%;
+  }
 }

@@ -14,7 +14,7 @@
 | :-: | :-: | :-: |
 | URL 参数 Key 重复提醒 | 🚧 | |
 | URL 参数转 Json | 🚧 | |
-| URL 编码模式切换（`encodeURI()` or `encodeURIComponent()` | ✅ | 2023.08.07 |
+| URL 编码模式切换（`encodeURI()` or `encodeURIComponent()`） | ✅ | 2023.08.07 |
 | URL 参数解析（输入、输出） | ✅ | 2023.08.06 |
 | URL 解码（校验输入合法性） | ✅ | 2023.08.04 |
 | URL 编码（校验输入合法性） | ✅ | 2023.08.04 |

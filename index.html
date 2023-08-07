@@ -26,6 +26,16 @@
       s.parentNode.insertBefore(hm, s);
     })();
   </script>
+  <!-- Google 统计分析 -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B1CEHJ1G63"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-B1CEHJ1G63');
+  </script>
 </head>
 
 <body>
@@ -61,13 +71,14 @@
           <div class="encode-mode">
             <div class="radio-group">
               <input type="radio" name="encode-mode" id="encode-uri" checked />
-              <label for="encode-uri"
-                data-tooltip="Using the encodeURI() method of JavaScript to implement.">Don't encode special characters</label>
+              <label for="encode-uri" data-tooltip="Using the encodeURI() method of JavaScript to implement.">Don't
+                encode special characters</label>
             </div>
             <div class="radio-group">
               <input type="radio" name="encode-mode" id="encode-uri-component" />
               <label for="encode-uri-component"
-                data-tooltip="Using the encodeURIComponent() method of JavaScript to implement.">Encode special characters</label>
+                data-tooltip="Using the encodeURIComponent() method of JavaScript to implement.">Encode special
+                characters</label>
             </div>
           </div>
         </div>

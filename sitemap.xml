@@ -1,27 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
 <url>
   <loc>https://www.urlxcode.com/</loc>
-  <lastmod>2023-08-07T07:59:15+00:00</lastmod>
-  <changefreq>monthly</changefreq>
+  <lastmod>2023-08-07T16:44:40+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.urlxcode.com/zh</loc>
-  <lastmod>2023-08-07T07:59:15+00:00</lastmod>
-  <changefreq>monthly</changefreq>
+  <lastmod>2023-08-07T16:44:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.urlxcode.com/kr</loc>
+  <lastmod>2023-08-07T16:44:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.urlxcode.com/jp</loc>
+  <lastmod>2023-08-07T16:44:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.urlxcode.com/post/About-URL-encoded.html</loc>
-  <lastmod>2023-08-07T07:59:15+00:00</lastmod>
-  <changefreq>monthly</changefreq>
+  <lastmod>2023-08-07T16:44:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.urlxcode.com/zh/post/About-URL-encoded.html</loc>
-  <lastmod>2023-08-07T07:59:15+00:00</lastmod>
-  <changefreq>monthly</changefreq>
+  <lastmod>2023-08-07T16:44:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
+<url>
+  <loc>https://www.urlxcode.com/kr/post/About-URL-encoded.html</loc>
+  <lastmod>2023-08-07T16:44:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.urlxcode.com/jp/post/About-URL-encoded.html</loc>
+  <lastmod>2023-08-07T16:44:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>

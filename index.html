@@ -69,26 +69,26 @@
       <textarea id="output-text" placeholder="URL encoded/decoded result." readonly></textarea>
     </div>
     <div class="btn-func">
-      <button id="btn-copy">Copy</button>
+      <button id="btn-copy" data-umami-event="clickCopyBtn">Copy</button>
       <div class="buttons">
-        <button id="btn-decode">Decode</button>
+        <button id="btn-decode" data-umami-event="clickDecodeBtn">Decode</button>
         <div class="encode-func">
-          <button id="btn-encode">Encode</button>
+          <button id="btn-encode" data-umami-event="clickEncodeBtn">Encode</button>
           <div class="encode-mode">
             <div class="radio-group">
-              <input type="radio" name="encode-mode" id="encode-uri" checked />
+              <input type="radio" name="encode-mode" id="encode-uri" data-umami-event="checkEncodeURI" checked />
               <label for="encode-uri" data-tooltip="Using the encodeURI() method of JavaScript to implement.">Don't
                 encode special characters</label>
             </div>
             <div class="radio-group">
-              <input type="radio" name="encode-mode" id="encode-uri-component" />
+              <input type="radio" name="encode-mode" id="encode-uri-component" data-umami-event="checkEncodeURIComponent" />
               <label for="encode-uri-component"
                 data-tooltip="Using the encodeURIComponent() method of JavaScript to implement.">Encode special
                 characters</label>
             </div>
           </div>
         </div>
-        <button id="btn-clear">Clear</button>
+        <button id="btn-clear" data-umami-event="clickClearBtn">Clear</button>
         <button id="btn-swap">Swap</button>
         <button id="btn-parse">Parse</button>
       </div>
@@ -161,6 +161,7 @@
     let copyBtnTextAfter = "Copied";
   </script>
   <script src="/static/js/index.js"></script>
+  <script src="/static/js/umamiTrack.js"></script>
 </body>
 
 </html>

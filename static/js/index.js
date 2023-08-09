@@ -16,7 +16,6 @@ function decode() {
 
   if (!isValidDecodeInput(input)) {
     showError(decodeErrorMsg);
-    umami.track("invalidDecodeInput");
     return;
   }
 
@@ -34,7 +33,6 @@ function encode() {
 
   if (!isValidEncodeInput(input)) {
     showError(encodeErrorMsg);
-    umami.track("invalidEncodeInput");
     return;
   }
 

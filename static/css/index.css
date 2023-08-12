@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  background: radial-gradient(circle at 50% 50%, #0D1330, #000513);
+  color: #F7F8F8;
 }
 
 .container {
@@ -8,10 +10,17 @@ body {
 }
 
 header {
-  background: #333;
-  color: #fff;
+  color: #F7F8F8;
   padding: 20px;
   height: 40px;
+  /* 实现 header 顶层浮起固定 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* 实现 header 毛玻璃效果 */
+  backdrop-filter: blur(12px);
+  background-color: rgba(2, 6, 22, 0.6);
 }
 
 header nav {
@@ -23,22 +32,38 @@ header a {
   text-decoration: none;
 }
 
+h1, h2, h3 {
+  background: linear-gradient(to bottom right, #FFFFFF, #888C94);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+
 main {
   display: flex;
   flex-direction: column;
+
+  padding-top: 80px;
 }
 
 main textarea {
-  width: 790px;
+  width: 760px;
   max-width: 100%;
   min-height: 100px;
   height: 20vh;
-  padding: 0 0 0 6px;
-  border: 2px solid #ccc;
-  border-radius: 4px;
+  padding: 20px;
+  border-radius: 10px;
   text-align: left;
   word-wrap: break-word;
+  border: none;
   resize: none;
+  outline: none;
+  background-color: #8E9299;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #F7F8F8;
+}
+
+main textarea::-webkit-input-placeholder {
+  color: #000513;
 }
 
 .btn-func {
@@ -87,8 +112,10 @@ main textarea {
   border-radius: 4px;
   cursor: pointer;
 }
+
 .buttons button:hover {
   background: #3c8aff;
+  box-shadow: 0 0 10px 0px #3c8aff;
 }
 
 #btn-clear {
@@ -96,6 +123,7 @@ main textarea {
 }
 #btn-clear:hover {
   background: #d40000;
+  box-shadow: 0 0 10px 0px #d40000;
 }
 
 #btn-copy {
@@ -109,6 +137,7 @@ main textarea {
 }
 #btn-copy:hover {
   background: #3c8aff;
+  box-shadow: 0 0 10px 0px #3c8aff;
 }
 
 footer {

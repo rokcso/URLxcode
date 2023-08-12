@@ -8,8 +8,6 @@ document.getElementById("btn-parse").addEventListener("click", parseAllURL);
 document.getElementById("btn-copy").addEventListener("click", copy);
 document.getElementById("input-text").addEventListener("input", clearError);
 
-let errorMsgDiv;
-
 function decode() {
   let input = document.getElementById("input-text").value;
   clearError();
@@ -117,10 +115,12 @@ function copy() {
   navigator.clipboard.writeText(outputValue);
   copyBtn.textContent = copyBtnTextAfter;
   copyBtn.style.background = "#40c060";
+  copyBtn.style.boxShadow = "0 0 10px 0px #40c060";
 
   setTimeout(() => {
     copyBtn.textContent = copyBtnTextBefore;
     copyBtn.style.background = "#4c9aff";
+    copyBtn.style.boxShadow = "";
   }, 250);
 }
 
@@ -152,20 +152,20 @@ function isValidEncodeInput(input) {
 
 function showError(msg) {
   const input = document.getElementById("input-text");
-  input.style.border = "2px solid red";
+  input.style.border = "1px solid red";
 
-  errorMsgDiv = document.createElement("div");
+  const errorMsgDiv = document.getElementById("error-msg"); 
   errorMsgDiv.textContent = msg;
   errorMsgDiv.style.color = "red";
-  input.parentElement.insertBefore(errorMsgDiv, input.nextSibling);
 }
 
 function clearError() {
   const input = document.getElementById("input-text");
+  const errorMsgDiv = document.getElementById("error-msg"); 
   if (errorMsgDiv) {
-    errorMsgDiv.remove();
+    errorMsgDiv.textContent = "";
   }
-  input.style.border = "1px solid #ccc";
+  input.style.border = "none";
 }
 
 function showOutput(output) {

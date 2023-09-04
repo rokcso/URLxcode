@@ -1,8 +1,10 @@
+⚠️ 注意：该仓库已不再维护，新版本 [NextURLxcode](https://github.com/rokcso/NextURLxcode) 使用 [Next.js](https://nextjs.org/) 构建。
+
 # URLxcode.com
 
 > x = En/De
 
-页面截图：![](https://github.com/rokcso/URLxcode/blob/main/img/URL%20Encode%20and%20Decode%20-%20Online%20Tool%20-%20URLxcode_com.png?raw=true)
+页面截图：![页面截图](https://github.com/rokcso/URLxcode/blob/main/img/URL%20Encode%20and%20Decode%20-%20Online%20Tool%20-%20URLxcode_com.png?raw=true)
 
 访问：[URLxcode.com](https://www.urlxcode.com/)
 

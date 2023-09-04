@@ -1,169 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 百度搜索资源站点验证 -->
+    <meta name="baidu-site-verification" content="codeva-yd4vTyGhor" />
+    <!-- Google 搜索资源站点验证 -->
+    <meta
+      name="google-site-verification"
+      content="h9_G-edVa7uTlUrYdzBl-7zMXQbInCXjG70uZ__CVmk"
+    />
+    <title>URL Encode and Decode - Online Tool - URLxcode.com</title>
+    <meta
+      name="description"
+      content="Encode URL to URL-encoded format or decode from it easily. Our site is an online tool to convert your URL."
+    />
+    <link
+      rel="shortcut icon"
+      href="/img/icon/icon16x16.png"
+      type="image/png"
+      sizes="16x16"
+    />
+    <link
+      rel="shortcut icon"
+      href="/img/icon/icon32x32.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <link
+      rel="shortcut icon"
+      href="/img/icon/icon48x48.png"
+      type="image/png"
+      sizes="48x48"
+    />
+    <link
+      rel="shortcut icon"
+      href="/img/icon/icon64x64.png"
+      type="image/png"
+      sizes="64x64"
+    />
+    <link
+      rel="shortcut icon"
+      href="/img/icon/icon128x128.png"
+      type="image/png"
+      sizes="128x128"
+    />
+    <link rel="stylesheet" href="/static/css/index.css" />
+    <!-- 私有化部署的 umami 统计分析 -->
+    <script
+      async
+      defer
+      data-website-id="1e1604b8-2b44-4b5f-87f8-f65c78879ff4"
+      src="https://umami.rokcso.com/umami.js"
+    ></script>
+    <!-- 百度统计分析 -->
+    <script>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?54ef289bd991df8f8430238e83790b15";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+    <!-- Google 统计分析 -->
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-B1CEHJ1G63"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- 百度搜索资源站点验证 -->
-  <meta name="baidu-site-verification" content="codeva-yd4vTyGhor" />
-  <!-- Google 搜索资源站点验证 -->
-  <meta name="google-site-verification" content="h9_G-edVa7uTlUrYdzBl-7zMXQbInCXjG70uZ__CVmk" />
-  <title>URL Encode and Decode - Online Tool - URLxcode.com</title>
-  <meta name="description"
-    content="Encode URL to URL-encoded format or decode from it easily. Our site is an online tool to convert your URL." />
-  <link rel="shortcut icon" href="/img/icon/icon16x16.png" type="image/png" sizes="16x16">
-  <link rel="shortcut icon" href="/img/icon/icon32x32.png" type="image/png" sizes="32x32">
-  <link rel="shortcut icon" href="/img/icon/icon48x48.png" type="image/png" sizes="48x48">
-  <link rel="shortcut icon" href="/img/icon/icon64x64.png" type="image/png" sizes="64x64">
-  <link rel="shortcut icon" href="/img/icon/icon128x128.png" type="image/png" sizes="128x128">
-  <link rel="stylesheet" href="/static/css/index.css" />
-  <!-- 私有化部署的 umami 统计分析 -->
-  <script async defer data-website-id="1e1604b8-2b44-4b5f-87f8-f65c78879ff4"
-    src="https://umami.waringhu.com/umami.js"></script>
-  <!-- 百度统计分析 -->
-  <script>
-    var _hmt = _hmt || [];
-    (function () {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?54ef289bd991df8f8430238e83790b15";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
-  <!-- Google 统计分析 -->
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B1CEHJ1G63"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+      gtag("config", "G-B1CEHJ1G63");
+    </script>
+  </head>
 
-    gtag('config', 'G-B1CEHJ1G63');
-  </script>
-</head>
-
-<body>
-  <header>
-    <div class="container">
-      <div class="logo">
-        <a href="/" id="site-title" title="URL Encode and Decode - Online Tool">
-          <span style="font-weight: bolder; font-size: larger">URL xcode</span>
-          <br />
-          <span style="font-weight: bold; font-size: smaller">x = En/De</span>
-        </a>
-        <nav>
-          <a href="/">English</a>
-          <a href="/zh">简体中文</a>
-          <a href="/kr">한국인</a>
-          <a href="/jp">日本語</a>
-        </nav>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a
+            href="/"
+            id="site-title"
+            title="URL Encode and Decode - Online Tool"
+          >
+            <span style="font-weight: bolder; font-size: larger"
+              >URL xcode</span
+            >
+            <br />
+            <span style="font-weight: bold; font-size: smaller">x = En/De</span>
+          </a>
+          <nav>
+            <a href="/">English</a>
+            <a href="/zh">简体中文</a>
+            <a href="/kr">한국인</a>
+            <a href="/jp">日本語</a>
+          </nav>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main class="container">
-    <h1>Encode to URL-encoded format or decode from it</h1>
-    <div class="text-box">
-      <textarea id="input-text" placeholder="Please enter the text to encod/decod."></textarea>
-      <span>🤖 🗣️ <span id="error-msg"></span></span>
-      <p>The following is the result of URL encoding or decoding:</p>
-      <textarea id="output-text" placeholder="URL encoded/decoded result." readonly></textarea>
-    </div>
-    <div class="btn-func">
-      <button id="btn-copy">Copy</button>
-      <div class="buttons">
-        <button id="btn-decode">Decode</button>
-        <div class="encode-func">
-          <button id="btn-encode">Encode</button>
-          <div class="encode-mode">
-            <div class="radio-group">
-              <input type="radio" name="encode-mode" id="encode-uri" checked />
-              <label for="encode-uri" data-tooltip="Using the encodeURI() method of JavaScript to implement.">Don't
-                encode special characters</label>
-            </div>
-            <div class="radio-group">
-              <input type="radio" name="encode-mode" id="encode-uri-component" />
-              <label for="encode-uri-component"
-                data-tooltip="Using the encodeURIComponent() method of JavaScript to implement.">Encode special
-                characters</label>
+    <main class="container">
+      <h1>Encode to URL-encoded format or decode from it</h1>
+      <div class="text-box">
+        <textarea
+          id="input-text"
+          placeholder="Please enter the text to encod/decod."
+        ></textarea>
+        <span>🤖 🗣️ <span id="error-msg"></span></span>
+        <p>The following is the result of URL encoding or decoding:</p>
+        <textarea
+          id="output-text"
+          placeholder="URL encoded/decoded result."
+          readonly
+        ></textarea>
+      </div>
+      <div class="btn-func">
+        <button id="btn-copy">Copy</button>
+        <div class="buttons">
+          <button id="btn-decode">Decode</button>
+          <div class="encode-func">
+            <button id="btn-encode">Encode</button>
+            <div class="encode-mode">
+              <div class="radio-group">
+                <input
+                  type="radio"
+                  name="encode-mode"
+                  id="encode-uri"
+                  checked
+                />
+                <label
+                  for="encode-uri"
+                  data-tooltip="Using the encodeURI() method of JavaScript to implement."
+                  >Don't encode special characters</label
+                >
+              </div>
+              <div class="radio-group">
+                <input
+                  type="radio"
+                  name="encode-mode"
+                  id="encode-uri-component"
+                />
+                <label
+                  for="encode-uri-component"
+                  data-tooltip="Using the encodeURIComponent() method of JavaScript to implement."
+                  >Encode special characters</label
+                >
+              </div>
             </div>
           </div>
+          <button id="btn-clear">Clear</button>
+          <button id="btn-swap">Swap</button>
+          <button id="btn-parse">Parse</button>
         </div>
-        <button id="btn-clear">Clear</button>
-        <button id="btn-swap">Swap</button>
-        <button id="btn-parse">Parse</button>
       </div>
-    </div>
-    <div class="post">
-      <h2>
-        <a href="/post/About-URL-encoded.html">What is URL-encoded format?</a>
-      </h2>
-      <p>
-        URL-encoding, also known as percent-encoding, is a mechanism for
-        encoding information in a Uniform Resource Identifier (URI) under
-        certain circumstances.
-      </p>
-      <p>
-        represents data, especially characters that are not permitted in a
-        URI, by replacing them with one or more character triplets consisting
-        of the percent character "%" followed by two hexadecimal digits.
-      </p>
-      <p>Some key points about URL-encoding:</p>
-      <ul>
-        <li>
-          It is used to encode characters that are not allowed or have special
-          meaning in a URI, such as spaces, non-ASCII characters, and certain
-          reserved characters like "?" and "/". This allows including such
-          characters in a URI.
-        </li>
-        <li>
-          The hexadecimal digits 0-9 and A-F are used to represent the encoded
-          value.
-        </li>
-        <li>
-          Some characters like alphabets, numbers, "-", ".", "_", and "~"
-          don't need to be encoded.
-        </li>
-        <li>
-          URLs can only be sent over the Internet using the ASCII
-          character-set. Since URLs often contain characters outside the ASCII
-          set, the URL has to be converted into a valid ASCII format.
-          URL-encoding provides this conversion.
-        </li>
-        <li>
-          The encoded format is also known as percent-encoding because it uses
-          the percent "%" character to denote encoded characters.
-        </li>
-        <li>
-          URL-encoding is different from HTML character encoding like HTML
-          entities.
-        </li>
-      </ul>
-      <p>Some examples of URL-encoding:</p>
-      <ul>
-        <li>Space character encodes to: %20</li>
-        <li>Exclamation mark encodes to: %21</li>
-        <li>Less than sign encodes to: %3C</li>
-      </ul>
-      <p>So the string "My file.txt" would encode to "My%20file.txt"</p>
-      
-    </div>
-  </main>
+      <div class="post">
+        <h2>
+          <a href="/post/About-URL-encoded.html">What is URL-encoded format?</a>
+        </h2>
+        <p>
+          URL-encoding, also known as percent-encoding, is a mechanism for
+          encoding information in a Uniform Resource Identifier (URI) under
+          certain circumstances.
+        </p>
+        <p>
+          represents data, especially characters that are not permitted in a
+          URI, by replacing them with one or more character triplets consisting
+          of the percent character "%" followed by two hexadecimal digits.
+        </p>
+        <p>Some key points about URL-encoding:</p>
+        <ul>
+          <li>
+            It is used to encode characters that are not allowed or have special
+            meaning in a URI, such as spaces, non-ASCII characters, and certain
+            reserved characters like "?" and "/". This allows including such
+            characters in a URI.
+          </li>
+          <li>
+            The hexadecimal digits 0-9 and A-F are used to represent the encoded
+            value.
+          </li>
+          <li>
+            Some characters like alphabets, numbers, "-", ".", "_", and "~"
+            don't need to be encoded.
+          </li>
+          <li>
+            URLs can only be sent over the Internet using the ASCII
+            character-set. Since URLs often contain characters outside the ASCII
+            set, the URL has to be converted into a valid ASCII format.
+            URL-encoding provides this conversion.
+          </li>
+          <li>
+            The encoded format is also known as percent-encoding because it uses
+            the percent "%" character to denote encoded characters.
+          </li>
+          <li>
+            URL-encoding is different from HTML character encoding like HTML
+            entities.
+          </li>
+        </ul>
+        <p>Some examples of URL-encoding:</p>
+        <ul>
+          <li>Space character encodes to: %20</li>
+          <li>Exclamation mark encodes to: %21</li>
+          <li>Less than sign encodes to: %3C</li>
+        </ul>
+        <p>So the string "My file.txt" would encode to "My%20file.txt"</p>
+      </div>
+    </main>
 
-  <footer>
-    <div class="container">
-      <p><b>Online URL Encode and Decode Tool</b> Copyright &copy; 2023 <a href="/">URLxcode.com</a> All rights reserved.</p>
-    </div>
-  </footer>
+    <footer>
+      <div class="container">
+        <p>
+          <b>Online URL Encode and Decode Tool</b> Copyright &copy; 2023
+          <a href="/">URLxcode.com</a> All rights reserved.
+        </p>
+      </div>
+    </footer>
 
-  <script>
-    let decodeErrorMsg = "Input cannot be decoded.";
-    let encodeErrorMsg = "Input cannot be encoded.";
-    let copyBtnTextBefore = "Copy";
-    let copyBtnTextAfter = "Copied";
-  </script>
-  <script src="/static/js/index.js"></script>
-  <script src="/static/js/umamiTrack.js"></script>
-</body>
-
+    <script>
+      let decodeErrorMsg = "Input cannot be decoded.";
+      let encodeErrorMsg = "Input cannot be encoded.";
+      let copyBtnTextBefore = "Copy";
+      let copyBtnTextAfter = "Copied";
+    </script>
+    <script src="/static/js/index.js"></script>
+    <script src="/static/js/umamiTrack.js"></script>
+  </body>
 </html>
